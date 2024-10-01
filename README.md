@@ -1,7 +1,7 @@
 
 ## Installing Anaconda + Python 3.11 + Tensorflow 2.15 + Keras 3 on Windows and CUDA
 
-Based on: **[Tensorflow GPU (Latest 2.14) installation on Windows 11 through WSL2](https://www.youtube.com/watch?v=VE5OiQSfPLg)**with modifications to make everything work against the [compatibilitymatrix](https://www.tensorflow.org/install/source#gpu)
+Based on: [Tensorflow GPU (Latest 2.14) installation on Windows 11 through WSL2](https://www.youtube.com/watch?v=VE5OiQSfPLg) with modifications to make everything work against the [compatibilitymatrix](https://www.tensorflow.org/install/source#gpu)
 
 **General:**
 
@@ -10,20 +10,15 @@ Impossible to follow not backwards compatible guide from Nvidia: <https://docs.n
 
 **On windows:**
 
-1\. Install wsl2
-
-2\. On windows machine install only Nvidia Game Ready Drivers. (NO CUDA TOOLKIT)
-
-3\. Install Ubuntu 20.04 in wsl2
-4\. Download: Anaconda For Linux: (Anaconda serves a similar purpose to nvm for NodeJS)
-`	`<https://www.anaconda.com/download> - for other versions
-`	`<https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh>
-5\. Download: cuDNN for Ubuntu 20.04
-
-`	`<https://developer.nvidia.com/rdp/cudnn-archive> - for other versions
-
+1. Install wsl2
+2. On windows machine install only Nvidia Game Ready Drivers. (NO CUDA TOOLKIT)
+3. Install Ubuntu 20.04 in wsl2
+4. Download: Anaconda For Linux: (Anaconda serves a similar purpose to nvm for NodeJS)
+<https://www.anaconda.com/download> - for other versions
+<https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh>
+5. Download: cuDNN for Ubuntu 20.04
+<https://developer.nvidia.com/rdp/cudnn-archive> - for other versions
 <https://developer.nvidia.com/downloads/compute/cudnn/secure/8.9.6/local_installers/11.x/cudnn-local-repo-ubuntu2004-8.9.6.50_1.0-1_amd64.deb/>
-
 6\. Place the downloaded files into ~/workspace/ in your wsl2 environment for ease of access (we will be using this directory to install in wsl2)
 
 **In wsl2:**
@@ -55,7 +50,7 @@ Following steps are found here: [https://developer.nvidia.com/cuda-toolkit-archi
 21.  `sudo cp /var/cudnn-local-\*/cudnn-\*-keyring.gpg /usr/share/keyrings/`
 22.  `sudo apt-get update`
 
-`	`*If using other versions of(cudnn, cudatoolkit, python, ubuntu), you can ensure availability of the following packages here: <https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/> (might need to replace ubuntu version in this link if you are using other ubuntu distros)*
+If using other versions of(cudnn, cudatoolkit, python, ubuntu), you can ensure availability of the following packages here: <https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/> (might need to replace ubuntu version in this link if you are using other ubuntu distros)
 
 23.  `sudo apt-get install libcudnn8=8.9.6.50-1+cuda12.2`
 24.  `sudo apt-get install libcudnn8-dev=8.9.6.50-1+cuda12.2`
