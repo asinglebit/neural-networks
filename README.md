@@ -1,4 +1,4 @@
-Installing Anaconda + Python 3.11 + Tensorflow 2.15 + Keras 3
+#Installing Anaconda + Python 3.11 + Tensorflow 2.15 + Keras 3
 Based on: Tenserflow GPU (Latest 2.14) installation on Windows 11 through WSL2 with modifications to make everything work against the compatibilitymatrix
 
 General:
