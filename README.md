@@ -1,3 +1,73 @@
+## Learning materials
+
+**In order of attack:**
+
+**Math:**
+
+- Derivatives
+[Introduction to Derivatives](https://www.mathsisfun.com/calculus/derivatives-introduction.html)
+- Python:
+- Numpy crash course
+[Python NumPy Tutorial for Beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI)**
+
+**Machine Learning:**
+
+- General machine learning concepts
+[Machine Learning Tutorial Python - 2: Linear Regression Single Variable](https://www.youtube.com/watch?v=8jazNUpO3lQ&list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw)
+
+**Deep Learning:**
+
+- Easy to follow general explanation of NNs
+[Neural Networks / Deep Learning - YouTube](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1)
+- Introduction to Deep Learning by MIT, (duplicate lectures for different years)
+[MIT Introduction to Deep Learning | 6.S191](https://www.youtube.com/watch?v=ErnWZxJovaM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+- Introduction to deep learning with Tensorflow 2 and Keras
+[Deep Learning With Tensorflow 2.0, Keras and Python - YouTube](https://www.youtube.com/playlist?list=PLeo1K3hjS3uu7CxAacxVndI4bE_o3BDtO)
+
+**Reinforcement Learning:**
+
+- Bellman Equation
+- Dynamic Programming
+- Monte Carlo Reinforcement
+- Q Learning
+- Deep Q Learning
+- Policy Gradient Methods
+- Actor Critic (A3C)
+- Continuous Action Space Actor Critic
+- Proximal Policy Optimization (PPO)
+- [Bellman Equation Basics for Reinforcement Learning](https://www.youtube.com/watch?v=14BfO5lMiuk&list=PLWzQK00nc192L7UMJyTmLXaHa3KcO0wBT)
+- **Markov Decision Processes
+- Bellman Equation
+- Q Learning
+- Deep Q Learning
+- Double  Deep Q Learning
+[Intro to RL](https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2)
+
+**Full course on Reinforcement learning (University of Waterloo, 2018):**
+
+**Hard to follow, sometimes too much theory, explanations are shallow (for us) in a lot of cases, but a very good course to get a general understanding of all theoretical aspects of reinforcement learning.**
+[https://www.youtube.com/watch?v=yOWBb0mqENw&list=PLdAoL1zKcqTXFJniO3Tqqn6xMBBL07EDc
+](https://www.youtube.com/watch?v=yOWBb0mqENw&list=PLdAoL1zKcqTXFJniO3Tqqn6xMBBL07EDc)
+
+**Github:**
+
+**Rainbow DQN, Tensorflow 2.0, incomplete implementation, crappy performance:**
+<https://github.com/Huixxi/TensorFlow2.0-for-Deep-Reinforcement-Learning>
+**Rainbow DQN, Pytorch uses convolutional layers:**
+<https://github.com/Kaixhin/Rainbow>
+**Rainbow DQN**, **Tensorflow 2.0:**
+<https://github.com/ClementPerroud/Rainbow-Agent>
+
+**Papers:**
+
+- **DoubleQ-learning** : Adding a Target Network that is used in the loss function and upgrade once every tau steps. See paper[ ](https://arxiv.org/abs/1509.06461)[Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
+- **Distributional RL** : Approximating the probability distributions of the Q-values instead of the Q-values themself. See paper :[ ](https://arxiv.org/abs/1707.06887)[A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887)
+- **Prioritizedreplay** : Sampling method that prioritize experiences with big *Temporal Difference(TD) errors* (~loss) at the beginning of a training. See paper :[ ](https://arxiv.org/abs/1511.05952)[Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+- **Dueling Networks**: Divide neural net stream into two branches, an action stream and a value stream. Both of them combined formed the Q-action values. See paper :[ ](https://arxiv.org/abs/1509.06461)[Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1509.06461)
+- **Multi-step learning** : Making Temporal Difference bigger than classic DQN (where TD = 1). See paper[ ](https://arxiv.org/abs/1703.01327)[Multi-step Reinforcement Learning: A Unifying Algorithm](https://arxiv.org/abs/1703.01327)
+- **NoisyNets** : Replace classic epsilon-greedy exploration/exploitation with noise in the Neural Net.[ ](https://arxiv.org/abs/1706.10295)[Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)
+- **Rainbow DQN:** <https://arxiv.org/pdf/1710.02298>
+- **Categories of Reinforcement Learning Algorithms:** <https://arxiv.org/pdf/2209.14940>
 
 ## Installing Anaconda + Python 3.11 + Tensorflow 2.15 + Keras 3 on Windows and CUDA
 
@@ -88,75 +158,3 @@ Now you can pass gpus into docker container
 Test by running `sudo docker run --gpus all nvcr.io/nvidia/k8s/cuda-sample:nbody nbody -gpu -benchmark`
 
 Note the `--gpus all` flag. It works only after you install **nvidia-container-toolkit**
-
-## Learning materials
-
-**In order of attack:**
-
-**Math:**
-
-- Derivatives
-[Introduction to Derivatives](https://www.mathsisfun.com/calculus/derivatives-introduction.html)
-- Python:
-- Numpy crash course
-[Python NumPy Tutorial for Beginners](https://www.youtube.com/watch?v=QUT1VHiLmmI)**
-
-**Machine Learning:**
-
-- General machine learning concepts
-[Machine Learning Tutorial Python - 2: Linear Regression Single Variable](https://www.youtube.com/watch?v=8jazNUpO3lQ&list=PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw)
-
-**Deep Learning:**
-
-- Easy to follow general explanation of NNs
-[Neural Networks / Deep Learning - YouTube](https://www.youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1)
-- Introduction to Deep Learning by MIT, (duplicate lectures for different years)
-[MIT Introduction to Deep Learning | 6.S191](https://www.youtube.com/watch?v=ErnWZxJovaM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
-- Introduction to deep learning with Tensorflow 2 and Keras
-[Deep Learning With Tensorflow 2.0, Keras and Python - YouTube](https://www.youtube.com/playlist?list=PLeo1K3hjS3uu7CxAacxVndI4bE_o3BDtO)
-
-
-**Reinforcement Learning:**
-
-- Bellman Equation
-- Dynamic Programming
-- Monte Carlo Reinforcement
-- Q Learning
-- Deep Q Learning
-- Policy Gradient Methods
-- Actor Critic (A3C)
-- Continuous Action Space Actor Critic
-- Proximal Policy Optimization (PPO)
-- [Bellman Equation Basics for Reinforcement Learning](https://www.youtube.com/watch?v=14BfO5lMiuk&list=PLWzQK00nc192L7UMJyTmLXaHa3KcO0wBT)
-- **Markov Decision Processes
-- Bellman Equation
-- Q Learning
-- Deep Q Learning
-- Double  Deep Q Learning
-[Intro to RL](https://www.youtube.com/watch?v=cVTud58UfpQ&list=PLYgyoWurxA_8ePNUuTLDtMvzyf-YW7im2)
-
-**Full course on Reinforcement learning (University of Waterloo, 2018):**
-
-**Hard to follow, sometimes too much theory, explanations are shallow (for us) in a lot of cases, but a very good course to get a general understanding of all theoretical aspects of reinforcement learning.**
-[https://www.youtube.com/watch?v=yOWBb0mqENw&list=PLdAoL1zKcqTXFJniO3Tqqn6xMBBL07EDc
-](https://www.youtube.com/watch?v=yOWBb0mqENw&list=PLdAoL1zKcqTXFJniO3Tqqn6xMBBL07EDc)
-
-**Github:**
-
-**Rainbow DQN, Tensorflow 2.0, incomplete implementation, crappy performance:**
-<https://github.com/Huixxi/TensorFlow2.0-for-Deep-Reinforcement-Learning>
-**Rainbow DQN, Pytorch uses convolutional layers:**
-<https://github.com/Kaixhin/Rainbow>
-**Rainbow DQN**, **Tensorflow 2.0:**
-<https://github.com/ClementPerroud/Rainbow-Agent>
-
-**Papers:**
-
-- **DoubleQ-learning** : Adding a Target Network that is used in the loss function and upgrade once every tau steps. See paper[ ](https://arxiv.org/abs/1509.06461)[Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
-- **Distributional RL** : Approximating the probability distributions of the Q-values instead of the Q-values themself. See paper :[ ](https://arxiv.org/abs/1707.06887)[A Distributional Perspective on Reinforcement Learning](https://arxiv.org/abs/1707.06887)
-- **Prioritizedreplay** : Sampling method that prioritize experiences with big *Temporal Difference(TD) errors* (~loss) at the beginning of a training. See paper :[ ](https://arxiv.org/abs/1511.05952)[Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
-- **Dueling Networks**: Divide neural net stream into two branches, an action stream and a value stream. Both of them combined formed the Q-action values. See paper :[ ](https://arxiv.org/abs/1509.06461)[Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1509.06461)
-- **Multi-step learning** : Making Temporal Difference bigger than classic DQN (where TD = 1). See paper[ ](https://arxiv.org/abs/1703.01327)[Multi-step Reinforcement Learning: A Unifying Algorithm](https://arxiv.org/abs/1703.01327)
-- **NoisyNets** : Replace classic epsilon-greedy exploration/exploitation with noise in the Neural Net.[ ](https://arxiv.org/abs/1706.10295)[Noisy Networks for Exploration](https://arxiv.org/abs/1706.10295)
-- **Rainbow DQN:** <https://arxiv.org/pdf/1710.02298>
-- **Categories of Reinforcement Learning Algorithms:** <https://arxiv.org/pdf/2209.14940>
